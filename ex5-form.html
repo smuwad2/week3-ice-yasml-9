@@ -9,11 +9,52 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
+    <style> 
+        .fixrbug1 {
+            margin-top: 5px;
+        }
+
+        .fixrbug2 {
+            margin-top: 5px;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .fixrbug1 {
+                margin-top: 5px;
+            }
+
+            .fixbug2 {
+                margin-top: 5px;
+            }
+        }
+
+        @media only screen and (min-width: 768px) {
+            .fixrbug1 {
+                margin-top: 0px;
+            }
+
+            .fixbug2 {
+                margin-top: 7px;
+            }
+        }
+
+        @media only screen and (min-width: 992px) {
+            .fixrbug1 {
+                margin-top: 5px;
+            }
+
+            .fixbug2 {
+                margin-top: 5px;
+            }
+        }
+        
+    </style>
+
 <body>
     <div class="container mt-5">
         <form>
             <div class="row g-3">
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 mt-5">
                     <label for="fullName" class="form-label">Full Name</label>
                     <div class="input-group mb-3">
                         <input type="text" class="form-control" id="fullName" aria-describedby="basic-addon3">
@@ -21,7 +62,7 @@
                 </div>
 
                 <!-- Email -->
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 mt-5">
                     <label for="email" class="form-label">Email address</label>
                     <div class="input-group mb-3">
                         <input type="email" class="form-control" id="email" aria-describedby="basic-addon3">
@@ -29,7 +70,7 @@
                 </div>
 
                 <!-- Gender -->
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 fixrbug1">
                     <label class="form-label d-block">Gender</label>
                     <div class="form-check form-check-inline">
                         <input type="radio" name="gender" id="male" value="male">
@@ -42,7 +83,7 @@
                 </div>
 
                 <!-- Country -->
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 fixrbug2">
                     <label for="country">Country</label>
                     <select id="country" class="form-control">
                         <option selected>Select your country</option>
@@ -53,7 +94,7 @@
                 </div>
 
                 <!-- Subscribe -->
-                <div class="form-check col-md-4">
+                <div class="form-check col-md-4 mt-5">
                     <div class="mt-3">
                         <input class="form-check-input" type="checkbox" id="subscribe">
                         <label for="subscribe">
@@ -63,7 +104,7 @@
                 </div>
 
                 <!-- Message -->
-                <div class="col-md-12">
+                <div class="col-md-12 mt-5">
                     <label for="message">Message</label>
                     <br>
                     <textarea class="form-control" id="message" rows="4" aria-label="with textarea"></textarea>
