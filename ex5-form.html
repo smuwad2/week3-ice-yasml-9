@@ -9,47 +9,6 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
-    <style> 
-        .fixrbug1 {
-            margin-top: 5px;
-        }
-
-        .fixrbug2 {
-            margin-top: 5px;
-        }
-
-        @media only screen and (max-width: 768px) {
-            .fixrbug1 {
-                margin-top: 5px;
-            }
-
-            .fixbug2 {
-                margin-top: 5px;
-            }
-        }
-
-        @media only screen and (min-width: 768px) {
-            .fixrbug1 {
-                margin-top: 0px;
-            }
-
-            .fixbug2 {
-                margin-top: 7px;
-            }
-        }
-
-        @media only screen and (min-width: 992px) {
-            .fixrbug1 {
-                margin-top: 5px;
-            }
-
-            .fixbug2 {
-                margin-top: 5px;
-            }
-        }
-        
-    </style>
-
 <body>
     <div class="container mt-5">
         <form>
@@ -71,7 +30,7 @@
 
                 <!-- Gender -->
                 <div class="col-lg-4 col-md-6 mt-5">
-                    <label class="form-label d-block" style="margin-bottom: 0px;" >Gender</label>
+                    <label class="form-label d-block">Gender</label>
                     <div class="form-check form-check-inline">
                         <input type="radio" name="gender" id="male" value="male">
                         <label for="male">Male</label>
@@ -83,7 +42,7 @@
                 </div>
 
                 <!-- Country -->
-                <div class="col-lg-4 col-md-6 mt-5">
+                <div class="col-lg-4 col-md-6 mt-5" style="margin-bottom: 8px;">
                     <label for="country">Country</label>
                     <select id="country" class="form-control">
                         <option selected>Select your country</option>
