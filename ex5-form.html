@@ -17,7 +17,17 @@
             margin-top: 5px;
         }
 
-        @media (max-width: 768px) {
+        @media only screen and (max-width: 768px) {
+            .fixrbug1 {
+                margin-top: 5px;
+            }
+
+            .fixbug2 {
+                margin-top: 5px;
+            }
+        }
+
+        @media only screen and (min-width: 768px) {
             .fixrbug1 {
                 margin-top: 0px;
             }
@@ -26,6 +36,17 @@
                 margin-top: 8px;
             }
         }
+
+        @media only screen and (min-width: 992px) {
+            .fixrbug1 {
+                margin-top: 5px;
+            }
+
+            .fixbug2 {
+                margin-top: 5px;
+            }
+        }
+        
     </style>
 </head>
 
