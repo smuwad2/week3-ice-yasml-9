@@ -7,6 +7,26 @@
     <title>Responsive Bootstrap Form</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <style> 
+        .fixrbug1 {
+            margin-top: 5px;
+        }
+
+        .fixrbug2 {
+            margin-top: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .fixrbug1 {
+                margin-top: 0px;
+            }
+
+            .fixbug2 {
+                margin-top: 8px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -29,7 +49,7 @@
                 </div>
 
                 <!-- Gender -->
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 fixrbug2">
                     <label class="form-label d-block">Gender</label>
                     <div class="form-check form-check-inline">
                         <input type="radio" name="gender" id="male" value="male">
@@ -42,7 +62,7 @@
                 </div>
 
                 <!-- Country -->
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 fixrbug1">
                     <label for="country">Country</label>
                     <select id="country" class="form-select">
                         <option selected>Select your country</option>
