@@ -9,6 +9,20 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
+<style>
+    @media screen and (min-width: 768px) {
+        .damn {
+            margin-bottom: 8px;
+        }
+    }
+
+    @media screen and (min-width: 992px) {
+        .damn {
+            margin-bottom: 0px;
+        }
+    }
+</style>
+
 <body>
     <div class="container mt-5">
         <form>
@@ -43,7 +57,7 @@
 
                 <!-- Country -->
                 <div class="col-lg-4 col-md-6 mt-5">
-                    <label for="country" style="margin-bottom: 8px;">Country</label>
+                    <label for="country" class="damn">Country</label>
                     <select id="country" class="form-control">
                         <option selected>Select your country</option>
                         <option>USA</option>
